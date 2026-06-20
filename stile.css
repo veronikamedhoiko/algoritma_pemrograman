@@ -12,9 +12,9 @@ body{
 .hero{
     background:linear-gradient(
     135deg,
-    #2563eb,
-    #7c3aed,
-    #ec4899);
+    #06a3eb,
+    #4f18ac,
+    #9803b6);
     color:white;
 
     padding:60px;
@@ -22,7 +22,7 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    flex-wrap:wrap;
+    flex-wrap:
 }
 
 .hero-text h1{
@@ -152,7 +152,7 @@ main{
 }
 
 .task-card h4{
-    color:#7c3aed;
+    color:#1e0fed;
     margin-top:20px;
     margin-bottom:10px;
 }
@@ -175,4 +175,54 @@ main{
 
 .task-card strong{
     color:#2563eb;
+}
+
+.custom-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+.custom-table th{
+    background:#2563eb;
+    color:white;
+    padding:12px;
+    text-align:left;
+}
+
+.custom-table td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+.custom-table tr:nth-child(even){
+    background:#f8fafc;
+}
+
+#tugas5 h3{
+    color:#4fc3f7;
+}
+
+#tugas5 h4{
+    margin-top:15px;
+    color:#333;
+}
+
+.task-card{
+    background:#fff;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+pre{
+    background:#f4f4f4;
+    padding:15px;
+    border-radius:8px;
+    overflow:auto;
+}
+
+code{
+    font-family:Consolas, monospace;
 }

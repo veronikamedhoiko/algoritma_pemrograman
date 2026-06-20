@@ -11,3 +11,4 @@ function showContent(id){
         .getElementById(id)
         .classList.add('active');
 }
+

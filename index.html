@@ -14,10 +14,10 @@
     <div class="hero-text">
         <span>KUMPULAN TUGAS</span>
 
-        <h1>Algoritma Pemrograman</h1>
+        <h1>ALGORITMA PEMROGRAMAN</h1>
 
         <p>
-            Website Dokumentasi Tugas UAS
+            Website Kumpulan Tugas 
         </p>
     </div>
 
@@ -226,57 +226,1053 @@
 
 </section>
 
-<section id="tugas2" class="content">
-    <h2>Tugas 2</h2>
+</section>
 
-    <p>
-        Ronaldo memulai karier profesionalnya bersama
-        Sporting CP sebelum bergabung dengan Manchester United.
-    </p>
+<section id="tugas2" class="content">
+
+    <h2>Tugas 2 - Tipe Data dan Operator Java</h2>
+
+    <div class="task-card">
+
+        <h3>1. Perbedaan Tipe Data Primitif dan Non-Primitif</h3>
+
+        <h4>Tipe Data Primitif</h4>
+
+        <ul>
+            <li>Tipe data bawaan (built-in) dalam Java.</li>
+            <li>Menyimpan nilai langsung.</li>
+            <li>Ukurannya tetap.</li>
+            <li>Tidak memiliki method (fungsi).</li>
+            <li>Contoh: int, char, boolean, double, float, byte, short, long.</li>
+        </ul>
+
+        <h4>Tipe Data Non-Primitif</h4>
+
+        <ul>
+            <li>Tipe data yang dibuat dari class.</li>
+            <li>Menyimpan referensi atau alamat memori.</li>
+            <li>Bisa memiliki method.</li>
+            <li>Ukurannya tidak tetap (dinamis).</li>
+            <li>Contoh: String, Array, Object, dan Class.</li>
+        </ul>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>2. Analisis Kesalahan Penulisan Variabel</h3>
+
+<pre>
+Int 5angka;
+String nama siswa;
+Int static;
+</pre>
+
+        <h4>Kesalahan</h4>
+
+        <ul>
+            <li>
+                <strong>Int 5angka;</strong><br>
+                Salah karena tipe data harus ditulis <strong>int</strong> (huruf kecil)
+                dan nama variabel tidak boleh diawali angka.
+            </li>
+
+            <li>
+                <strong>String nama siswa;</strong><br>
+                Salah karena nama variabel tidak boleh mengandung spasi.
+            </li>
+
+            <li>
+                <strong>Int static;</strong><br>
+                Salah karena <strong>int</strong> harus huruf kecil dan
+                <strong>static</strong> merupakan keyword Java sehingga
+                tidak boleh digunakan sebagai nama variabel.
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>3. Contoh Deklarasi Array</h3>
+
+<pre>
+int[] angka = new int[5];
+</pre>
+
+        <p>Atau:</p>
+
+<pre>
+int angka[] = {1, 2, 3, 4, 5};
+</pre>
+
+        <h4>Penjelasan</h4>
+
+        <ul>
+            <li>int[] → tipe data array.</li>
+            <li>angka → nama variabel.</li>
+            <li>[5] → jumlah elemen array.</li>
+        </ul>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>4. Operator Aritmatika Dalam Java</h3>
+
+        <table class="custom-table">
+
+            <tr>
+                <th>Operator</th>
+                <th>Keterangan</th>
+            </tr>
+
+            <tr>
+                <td>+</td>
+                <td>Penjumlahan</td>
+            </tr>
+
+            <tr>
+                <td>-</td>
+                <td>Pengurangan</td>
+            </tr>
+
+            <tr>
+                <td>*</td>
+                <td>Perkalian</td>
+            </tr>
+
+            <tr>
+                <td>/</td>
+                <td>Pembagian</td>
+            </tr>
+
+            <tr>
+                <td>%</td>
+                <td>Modulus (sisa hasil bagi)</td>
+            </tr>
+
+        </table>
+
+        <p><strong>Contoh:</strong></p>
+
+        <ul>
+            <li>a + b → menjumlahkan nilai.</li>
+            <li>a % b → menghasilkan sisa pembagian.</li>
+        </ul>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>5. Implementasi Operator Pembagian Dalam Java</h3>
+
+<pre>
+public class Pembagian {
+
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 2;
+
+        int hasil = a / b;
+
+        System.out.println(
+            "Hasil pembagian: " + hasil
+        );
+
+    }
+
+}
+</pre>
+
+        <h4>Output</h4>
+
+<pre>
+Hasil pembagian: 5
+</pre>
+
+        <h4>Catatan</h4>
+
+        <ul>
+            <li>Jika menggunakan int, hasil pembagian akan dibulatkan.</li>
+            <li>Untuk hasil desimal gunakan double.</li>
+        </ul>
+
+<pre>
+double hasil = 10.0 / 3;
+</pre>
+
+    </div>
+
+</section>
+
+
 </section>
 
 <section id="tugas3" class="content">
-    <h2>Tugas 3</h2>
 
-    <p>
-        Saat bermain untuk Real Madrid, Ronaldo berhasil
-        menjadi pencetak gol terbanyak sepanjang sejarah klub.
-    </p>
+    <h2>Tugas 3 - Struktur Algoritma Sekuensial</h2>
+
+    <div class="task-card">
+
+        <h3>1. Pengertian Instruksi Pada Algoritma</h3>
+
+        <p>
+            Instruksi pada algoritma adalah perintah-perintah atau langkah-langkah
+            yang harus dilakukan secara sistematis untuk menyelesaikan suatu masalah.
+        </p>
+
+        <p>
+            Instruksi ditulis secara jelas dan berurutan agar dapat dipahami
+            serta dijalankan oleh manusia maupun komputer.
+        </p>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>2. Pengertian Struktur Algoritma Sekuensial</h3>
+
+        <p>
+            Struktur algoritma sekuensial adalah bentuk algoritma yang
+            langkah-langkahnya dijalankan secara berurutan dari awal hingga akhir
+            tanpa adanya percabangan maupun perulangan.
+        </p>
+
+        <p>
+            Setiap instruksi dijalankan satu per satu sesuai urutan penulisannya.
+        </p>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>3. Karakteristik Struktur Sekuensial</h3>
+
+        <ul>
+            <li>Langkah-langkah dieksekusi secara berurutan.</li>
+            <li>Tidak ada percabangan (if/else).</li>
+            <li>Tidak ada perulangan (loop).</li>
+            <li>Alur program sederhana dan mudah dipahami.</li>
+            <li>Setiap langkah hanya dijalankan satu kali.</li>
+        </ul>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>4. Contoh Penggunaan Struktur Sekuensial</h3>
+
+        <h4>Menghitung Luas Persegi Panjang</h4>
+
+        <ol>
+            <li>Mulai.</li>
+            <li>Masukkan nilai panjang.</li>
+            <li>Masukkan nilai lebar.</li>
+            <li>Hitung luas = panjang × lebar.</li>
+            <li>Tampilkan hasil luas.</li>
+            <li>Selesai.</li>
+        </ol>
+
+<pre>
+Input:
+Panjang = 10
+Lebar = 5
+
+Proses:
+Luas = Panjang × Lebar
+Luas = 10 × 5
+
+Output:
+Luas = 50
+</pre>
+
+        <p>
+            Contoh ini menunjukkan bahwa setiap langkah dilakukan secara
+            berurutan tanpa adanya percabangan maupun perulangan.
+        </p>
+
+    </div>
+
 </section>
 
-<section id="tugas4" class="content">
-    <h2>Tugas 4</h2>
+</section>
 
-    <p>
-        Ronaldo telah memenangkan berbagai penghargaan
-        individu termasuk Ballon d'Or.
-    </p>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4 - Algoritma Pemrograman</title>
+    <style>
+        /* ====================================
+           1. CSS UTAMA (GAYA WEB & TABEL)
+           ==================================== */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #1e3a8a;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        .task-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #2563eb;
+        }
+
+        .task-card h3 {
+            color: #1e40af;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 5px;
+        }
+
+        .task-card h4 {
+            color: #475569;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        pre {
+            background-color: #0f172a;
+            color: #38bdf8;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: 'Consolas', 'Courier New', Courier, monospace;
+            font-size: 14px;
+            margin: 15px 0;
+            line-height: 1.5;
+        }
+
+        code {
+            background-color: #f1f5f9;
+            color: #b91c1c;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .custom-table th {
+            background: #2563eb;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .custom-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        .custom-table tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* ====================================
+           2. CSS UNTUK MEMBENTUK FLOWCHART 
+           ==================================== */
+        .flowchart-container {
+            text-align: center;
+            background: #f8fafc;
+            padding: 20px;
+            border: 2px dashed #cbd5e1;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .flowchart-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background: #ffffff;
+        }
+
+        .flow-arrow {
+            font-size: 24px;
+            color: #2563eb;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .flow-node {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            min-width: 160px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .node-terminal {
+            background-color: #ef4444; 
+            border-radius: 25px;
+        }
+
+        .node-process {
+            background-color: #3b82f6; 
+            border-radius: 4px;
+        }
+
+        .node-process-small {
+            background-color: #10b981; 
+            border-radius: 4px;
+            padding: 8px 15px;
+            min-width: 100px;
+        }
+
+        /* MEMBENTUK JAJAR GENJANG (Input/Output) */
+        .flow-parallelogram {
+            background: #f59e0b; 
+            transform: skewX(-20deg); 
+            padding: 10px 25px;
+            min-width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .flow-parallelogram .flow-content {
+            transform: skewX(20deg); 
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* MEMBENTUK BELAH KETUPAT (Decision) */
+        .flow-rhombus {
+            width: 100px;
+            height: 100px;
+            background: #8b5cf6; 
+            transform: rotate(45deg); 
+            position: relative;
+            box-shadow: 4px 4px 6px rgba(0,0,0,0.1);
+            margin: 15px 0;
+        }
+
+        .flow-rhombus .flow-content-rhombus {
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 22px;
+            left: 8px;
+            width: 85px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 1.3;
+        }
+
+        .flow-branch-container {
+            display: flex;
+            justify-content: space-between;
+            width: 340px;
+            margin-top: 10px;
+        }
+
+        .branch-line {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+        }
+
+        .branch-label {
+            font-size: 13px;
+            font-weight: bold;
+            color: #4b5563;
+            margin-bottom: 5px;
+        }
+
+        .caption {
+            font-size: 13px;
+            color: #64748b;
+            font-style: italic;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<section id="tugas4" class="content">
+
+    <h2>Tugas 4 - Algoritma Pemrograman: Flowchart & Implementasi</h2>
+
+    <div class="task-card">
+        <h3>1. Notasi Kalimat Deskriptif</h3>
+        <h4>Deklarasi:</h4>
+        <p><code>jenis: String</code>, <code>lama: Integer</code>, <code>tarif: Integer</code>, <code>total: Integer</code>.</p>
+        <h4>Deskripsi:</h4>
+        <ul>
+            <li>Mulai program.</li>
+            <li>Masukkan jenis kendaraan.</li>
+            <li>Masukkan lama parkir dalam jam.</li>
+            <li>Cek Kondisi: Jika jenis = "Mobil", maka tarif = 5000, jika tidak tarif = 2000.</li>
+            <li>Hitung total = lama * tarif.</li>
+            <li>Tampilkan total bayar.</li>
+            <li>Selesai.</li>
+        </ul>
+    </div>
+
+    <div class="task-card">
+        <h3>2. Notasi Pseudocode</h3>
+<pre>
+Program HitungParkir
+
+Deklarasi:
+    jenis : string
+    lama, tarif, total : integer
+
+Algoritma:
+    read (jenis)
+    read (lama)
+
+    IF jenis == "Mobil" THEN
+        tarif = 5000
+    ELSE
+        tarif = 2000
+    ENDIF
+
+    total = lama * tarif
+    write (total)
+
+END
+</pre>
+    </div>
+
+    <div class="task-card">
+        <h3>3. Flowchart Program (Bentuk Geometris CSS Murni)</h3>
+        
+        <div class="flowchart-container">
+            <div class="flowchart-wrapper">
+                <div class="flow-node node-terminal">MULAI</div>
+                <div class="flow-arrow">↓</div>
+
+                <div class="flow-node node-process">Jenis, Lama, Tarif, Total</div>
+                <div class="flow-arrow">↓</div>
+
+                <div class="flow-parallelogram">
+                    <div class="flow-content">Input: Jenis & Lama</div>
+                </div>
+                <div class="flow-arrow">↓</div>
+
+                <div class="flow-rhombus">
+                    <div class="flow-content-rhombus">Cek Kondisi<br>(Mobil?)</div>
+                </div>
+
+                <div class="flow-branch-container">
+                    <div class="branch-line">
+                        <span class="branch-label">Ya</span>
+                        <div class="flow-node node-process-small">Tarif = 5000</div>
+                    </div>
+                    <div class="branch-line">
+                        <span class="branch-label">Tidak</span>
+                        <div class="flow-node node-process-small">Tarif = 2000</div>
+                    </div>
+                </div>
+
+                <div class="flow-arrow" style="margin-top: 20px;">↓</div>
+
+                <div class="flow-node node-process">Total = Lama * Tarif</div>
+                <div class="flow-arrow">↓</div>
+
+                <div class="flow-parallelogram">
+                    <div class="flow-content">Output: Total</div>
+                </div>
+                <div class="flow-arrow">↓</div>
+
+                <div class="flow-node node-terminal">Selesai</div>
+            </div>
+            <div class="caption">Gambar 4.1: Flowchart Logika Perhitungan Biaya Parkir</div>
+        </div>
+    </div>
+
+    <div class="task-card">
+        <h3>4. Implementasi Menggunakan Python</h3>
+<pre>
+# PROGRAM MENGHITUNG BIAYA PARKIR
+jenis = input("Masukkan jenis kendaraan (Motor/Mobil): ")
+lama = int(input("Masukkan lama parkir (jam): "))
+
+if jenis.lower() == "mobil":
+    tarif = 5000
+else:
+    tarif = 2000
+
+total = lama * tarif
+
+print("Total biaya parkir adalah: Rp", total)
+
+# OUTPUT HASIL RUNNING:
+    - Mobil : 2 jam*5.000 = 10.000
+    - Motor : 3 jam*2.000 = 6.000
+</pre>
+    </div>
+
 </section>
 
 <section id="tugas5" class="content">
-    <h2>Tugas 5</h2>
 
-    <p>
-        Bersama Portugal, Ronaldo berhasil menjuarai
-        UEFA Euro 2016.
-    </p>
+    <h2>Tugas 5 - Struktur Perulangan Dalam Python</h2>
+
+    <div class="task-card">
+
+        <h3>1. Perulangan Struktur For</h3>
+
+        <p>
+            Perulangan <strong>For</strong> digunakan untuk mengulang suatu
+            perintah berdasarkan jumlah perulangan yang telah ditentukan.
+        </p>
+
+        <h4>Kode Python</h4>
+
+<pre><code>
+for i in range(1, 6):
+    print("Perulangan ke-", i)
+</code></pre>
+
+        <h4>Hasil Running</h4>
+
+<pre>
+Perulangan ke- 1
+Perulangan ke- 2
+Perulangan ke- 3
+Perulangan ke- 4
+Perulangan ke- 5
+</pre>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>2. Perulangan Struktur While</h3>
+
+        <p>
+            Perulangan <strong>While</strong> akan berjalan selama kondisi
+            yang diberikan bernilai benar (True).
+        </p>
+
+        <h4>Kode Python</h4>
+
+<pre><code>
+i = 1
+
+while i <= 5:
+    print("Perulangan ke-", i)
+    i += 1
+</code></pre>
+
+        <h4>Hasil Running</h4>
+
+<pre>
+Perulangan ke- 1
+Perulangan ke- 2
+Perulangan ke- 3
+Perulangan ke- 4
+Perulangan ke- 5
+</pre>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>3. Perulangan Struktur Do-While</h3>
+
+        <p>
+            Bahasa Python tidak memiliki struktur Do-While secara langsung,
+            sehingga dapat dibuat menggunakan <strong>while True</strong>.
+        </p>
+
+        <h4>Kode Python</h4>
+
+<pre><code>
+i = 1
+
+while True:
+    print("Perulangan ke-", i)
+    i += 1
+
+    if i > 5:
+        break
+</code></pre>
+
+        <h4>Hasil Running</h4>
+
+<pre>
+Perulangan ke- 1
+Perulangan ke- 2
+Perulangan ke- 3
+Perulangan ke- 4
+Perulangan ke- 5
+</pre>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>4. Perulangan Bersarang (Nested Loop)</h3>
+
+        <p>
+            Nested Loop adalah perulangan yang berada di dalam perulangan lain.
+        </p>
+
+        <h4>Kode Python</h4>
+
+<pre><code>
+for i in range(5):
+    for j in range(5):
+        print("*", end=" ")
+    print()
+</code></pre>
+
+        <h4>Hasil Running</h4>
+
+<pre>
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+</pre>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>Kesimpulan</h3>
+
+        <p>
+            Struktur perulangan digunakan untuk menjalankan suatu instruksi
+            secara berulang tanpa harus menuliskan kode yang sama berkali-kali.
+            Dalam Python terdapat berbagai jenis perulangan seperti
+            <strong>For</strong>, <strong>While</strong>,
+            <strong>Do-While (simulasi)</strong>, dan
+            <strong>Nested Loop</strong> yang masing-masing memiliki fungsi
+            sesuai kebutuhan program.
+        </p>
+
+    </div>
+
 </section>
 
 <section id="tugas6" class="content">
-    <h2>Tugas 6</h2>
 
-    <p>
-        Ronaldo dikenal memiliki etos kerja yang sangat tinggi.
-    </p>
+    <h2>Tugas 6 - Pretest Array</h2>
+
+    <div class="task-card">
+
+        <h3>1. Apa yang Dimaksud Dengan Array?</h3>
+
+        <p>
+            Array adalah struktur data yang digunakan untuk menyimpan sekumpulan
+            data yang memiliki tipe data yang sama dalam satu variabel.
+            Setiap data dalam array disebut elemen dan memiliki indeks
+            untuk mengaksesnya.
+        </p>
+
+        <h4>Contoh:</h4>
+
+        <pre><code>
+nilai = [80, 85, 90, 75, 88]
+        </code></pre>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>2. Jelaskan Yang Dimaksud Dengan Array 1 Dimensi!</h3>
+
+        <p>
+            Array 1 dimensi adalah array yang hanya memiliki satu indeks
+            untuk mengakses datanya. Data disimpan secara berurutan seperti
+            daftar atau list.
+        </p>
+
+        <h4>Contoh:</h4>
+
+        <pre><code>
+buah = ['Apel', 'Mangga', 'Jeruk', 'Pisang']
+buah[0]
+        </code></pre>
+
+        <p>
+            Hasil: <strong>'Apel'</strong> karena indeks dimulai dari 0.
+        </p>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>3. Bagaimana Cara Mendeklarasikan Array?</h3>
+
+        <p>
+            Mendeklarasikan array berarti membuat array dengan menentukan
+            nama array dan data yang akan disimpan.
+        </p>
+
+        <h4>Contoh Python:</h4>
+
+        <pre><code>
+angka = [10, 20, 30, 40, 50]
+        </code></pre>
+
+        <h4>Contoh C++:</h4>
+
+        <pre><code>
+int angka[5] = {10,20,30,40,50};
+        </code></pre>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>4. Tipe Data Yang Digunakan Untuk Mendeklarasikan Array</h3>
+
+        <ul>
+            <li><strong>Integer (int)</strong>
+                <pre><code>umur = [18,19,20]</code></pre>
+            </li>
+
+            <li><strong>Float</strong>
+                <pre><code>tinggi = [160.5, 165.2, 170.8]</code></pre>
+            </li>
+
+            <li><strong>String</strong>
+                <pre><code>nama = ['Andi','Budi','Siti']</code></pre>
+            </li>
+
+            <li><strong>Character (C++)</strong>
+                <pre><code>char huruf[4] = {'A','B','C','D'};</code></pre>
+            </li>
+
+            <li><strong>Boolean</strong>
+                <pre><code>status = [True, False, True]</code></pre>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>5. Macam-Macam Array Yang Diketahui</h3>
+
+        <h4>a. Array Satu Dimensi (1D)</h4>
+
+        <pre><code>
+nilai = [80, 85, 90, 75]
+        </code></pre>
+
+        <h4>b. Array Dua Dimensi (2D)</h4>
+
+        <pre><code>
+matriks = [[1,2,3],[4,5,6]]
+        </code></pre>
+
+        <h4>c. Array Multidimensi</h4>
+
+        <pre><code>
+data = [[[1,2],[3,4]]]
+        </code></pre>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>Kesimpulan</h3>
+
+        <p>
+            Array adalah struktur data yang digunakan untuk menyimpan banyak
+            data bertipe sama dalam satu variabel. Berdasarkan dimensinya,
+            array dibedakan menjadi array satu dimensi, dua dimensi, dan
+            multidimensi. Penggunaan array membuat pengelolaan data menjadi
+            lebih mudah dan efisien.
+        </p>
+
+    </div>
+
 </section>
 
 <section id="tugas7" class="content">
-    <h2>Tugas 7</h2>
 
-    <p>
-        Hingga saat ini Ronaldo tetap menjadi salah satu
-        atlet paling berpengaruh di dunia.
-    </p>
+    <h2>Tugas 7 - Array Dua Dimensi</h2>
+
+    <div class="task-card">
+
+        <h3>1. Apa yang Kamu Ketahui Tentang Array Dua Dimensi?</h3>
+
+        <p>
+            Array dua dimensi adalah struktur data yang digunakan untuk
+            menyimpan sekumpulan data yang tersusun dalam bentuk baris
+            (row) dan kolom (column) sehingga menyerupai tabel atau matriks.
+        </p>
+
+        <h4>Contoh Python</h4>
+
+        <pre><code>
+nilai = [
+    [80, 85, 90],
+    [75, 88, 92],
+    [70, 78, 85]
+]
+        </code></pre>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>2. Bagaimana Cara Mendeklarasikan Array Dua Dimensi?</h3>
+
+        <p>
+            Mendeklarasikan array dua dimensi berarti membuat array yang
+            terdiri dari beberapa baris dan kolom.
+        </p>
+
+        <h4>Contoh Python</h4>
+
+        <pre><code>
+matriks = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+        </code></pre>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>3. Selain Array Dua Dimensi, Sebutkan Macam-Macam Array!</h3>
+
+        <h4>a. Array Satu Dimensi (1D)</h4>
+
+        <pre><code>
+angka = [10, 20, 30, 40, 50]
+        </code></pre>
+
+        <h4>b. Array Dua Dimensi (2D)</h4>
+
+        <pre><code>
+matriks = [[1,2],[3,4]]
+        </code></pre>
+
+        <h4>c. Array Tiga Dimensi (3D)</h4>
+
+        <pre><code>
+data = [[[1,2],[3,4]]]
+        </code></pre>
+
+        <h4>d. Array Multidimensi</h4>
+
+        <pre><code>
+data = [[[1,2],[3,4]], [[5,6],[7,8]]]
+        </code></pre>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>4. Apa Perbedaan Array Satu Dimensi Dengan Array Dua Dimensi?</h3>
+
+        <ul>
+            <li>Array satu dimensi hanya memiliki satu indeks.</li>
+            <li>Bentuknya seperti daftar (list).</li>
+            <li>Data disusun dalam satu baris.</li>
+            <li>Lebih sederhana untuk digunakan.</li>
+        </ul>
+
+        <br>
+
+        <ul>
+            <li>Array dua dimensi memiliki dua indeks.</li>
+            <li>Bentuknya seperti tabel.</li>
+            <li>Data disusun dalam baris dan kolom.</li>
+            <li>Cocok untuk menyimpan data yang lebih kompleks.</li>
+        </ul>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>5. Apa Perbedaan Array Dua Dimensi Dengan Array Multidimensi?</h3>
+
+        <ul>
+            <li>Array dua dimensi memiliki dua indeks (baris dan kolom).</li>
+            <li>Bentuknya menyerupai tabel atau matriks.</li>
+            <li>Lebih mudah dipahami dan digunakan.</li>
+        </ul>
+
+        <br>
+
+        <ul>
+            <li>Array multidimensi memiliki lebih dari dua indeks.</li>
+            <li>Dapat menyimpan data yang lebih kompleks.</li>
+            <li>Biasanya digunakan pada aplikasi yang membutuhkan banyak dimensi data.</li>
+        </ul>
+
+    </div>
+
+    <div class="task-card">
+
+        <h3>Kesimpulan</h3>
+
+        <p>
+            Array adalah struktur data yang digunakan untuk menyimpan banyak
+            data dalam satu variabel. Array dua dimensi menyimpan data dalam
+            bentuk baris dan kolom seperti tabel. Selain array dua dimensi,
+            terdapat array satu dimensi, tiga dimensi, dan multidimensi.
+            Penggunaan array memudahkan pengelolaan data sehingga program
+            menjadi lebih terstruktur dan efisien.
+        </p>
+
+    </div>
+
 </section>
 
 </main>
