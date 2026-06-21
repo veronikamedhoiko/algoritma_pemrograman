@@ -12,10 +12,10 @@ body{
 .hero{
     background:linear-gradient(
     135deg,
-    #06a3eb,
-    #4f18ac,
-    #9803b6);
-    color:white;
+    #69bd03,
+    #bcee06,
+    #61e707);
+    color:rgb(4, 14, 4);
 
     padding:60px;
 
@@ -31,7 +31,7 @@ body{
 }
 
 .profile-card{
-    background:white;
+    background:rgb(103, 196, 254);
     color:#333;
     width:320px;
     text-align:center;
@@ -45,7 +45,7 @@ body{
     height:180px;
     border-radius:50%;
     object-fit:cover;
-    border:5px solid #2563eb;
+    border:5px solid #f80c1f;
 }
 
 .profile-card h2{
